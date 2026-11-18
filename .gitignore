@@ -3,6 +3,24 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Checkpoints pesados do PyTorch
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Corpus e datasets
+data/*
+!data/.gitkeep
+*.zip
+*.tar.gz
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+
 # C extensions
 *.so
 
