@@ -1,0 +1,52 @@
+
+
+
+ID <|endoftext|> (Próprio)    : 0
+ID <|endoftext|> (Referência) : 0
+
+=== Fertilidade em TREINO (train.txt) ===
+Meu BPE 16k          | Palavras: 19,992,559 | Tokens: 27,488,072 | Fertilidade: 1.3749 tokens/palavra
+Referência BPE 16k   | Palavras: 19,992,559 | Tokens: 27,492,935 | Fertilidade: 1.3752 tokens/palavra
+GPT-2 (tiktoken)     | Palavras: 19,992,559 | Tokens: 48,538,420 | Fertilidade: 2.4278 tokens/palavra
+
+=== Fertilidade em VALIDAÇÃO (val.txt) ===
+Meu BPE 16k          | Palavras: 1,146,783 | Tokens: 1,578,264 | Fertilidade: 1.3763 tokens/palavra
+Referência BPE 16k   | Palavras: 1,146,783 | Tokens: 1,578,446 | Fertilidade: 1.3764 tokens/palavra
+GPT-2 (tiktoken)     | Palavras: 1,146,783 | Tokens: 2,789,160 | Fertilidade: 2.4322 tokens/palavra
+
+=== Comparação de Segmentação ===
+
+Palavra: 'computação'
+  Meu BPE 16k : ['comp', 'u', 'tação'] (3 tokens)
+  Referência  : ['comp', 'u', 'tação'] (3 tokens)
+  GPT-2       : ['com', 'put', 'a', 'ç', 'ão'] (5 tokens)
+
+Palavra: 'científico'
+  Meu BPE 16k : ['cient', 'ífico'] (2 tokens)
+  Referência  : ['cient', 'ífico'] (2 tokens)
+  GPT-2       : ['cient', 'í', 'f', 'ico'] (4 tokens)
+
+Palavra: 'metodológicas'
+  Meu BPE 16k : ['metodológ', 'icas'] (2 tokens)
+  Referência  : ['metodológ', 'icas'] (2 tokens)
+  GPT-2       : ['met', 'od', 'ol', 'ó', 'g', 'icas'] (6 tokens)
+
+Palavra: 'dá-lo'
+  Meu BPE 16k : ['d', 'á', '-', 'lo'] (4 tokens)
+  Referência  : ['d', 'á', '-', 'lo'] (4 tokens)
+  GPT-2       : ['d', 'á', '-', 'lo'] (4 tokens)
+
+Palavra: 'analisá-las'
+  Meu BPE 16k : ['an', 'alis', 'á', '-', 'las'] (5 tokens)
+  Referência  : ['an', 'alis', 'á', '-', 'las'] (5 tokens)
+  GPT-2       : ['an', 'alis', 'á', '-', 'las'] (5 tokens)
+
+Palavra: 'desenvolveram'
+  Meu BPE 16k : ['desenvol', 'veram'] (2 tokens)
+  Referência  : ['desenvol', 'veram'] (2 tokens)
+  GPT-2       : ['des', 'en', 'vol', 'ver', 'am'] (5 tokens)
+
+Palavra: 'implementaríamos'
+  Meu BPE 16k : ['imp', 'le', 'menta', 'rí', 'amos'] (5 tokens)
+  Referência  : ['imp', 'le', 'menta', 'rí', 'amos'] (5 tokens)
+  GPT-2       : ['im', 'plement', 'ar', 'í', 'am', 'os'] (6 tokens)
